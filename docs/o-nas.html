@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>O nás — Orcabyte</title>
+  <meta name="description" content="[DOPLŇ: 1–2 vety o firme Orcabyte pre túto stránku]" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="icon" type="image/svg+xml" href="assets/img/logo-icon.svg" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="index.html"><img src="assets/img/logo-icon.svg" alt="Orcabyte logo" class="logo-icon" width="28" height="28" />Orcabyte</a>
+      <button class="nav-toggle" aria-label="Otvoriť menu" aria-expanded="false">☰</button>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Domov</a></li>
+          <li><a class="active" href="o-nas.html">O nás</a></li>
+          <li><a href="sluzby.html">Služby</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>O nás</h1>
+        <p>[DOPLŇ: príbeh firmy — kedy a prečo vznikla, čím sa odlišujete.]</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2>Náš tím</h2>
+        <p class="lead">[DOPLŇ: krátky popis tímu alebo zakladateľov]</p>
+        <div class="card-grid">
+          <div class="card">
+            <h3>[DOPLŇ meno / rola]</h3>
+            <p>[DOPLŇ krátky popis]</p>
+          </div>
+          <div class="card">
+            <h3>[DOPLŇ meno / rola]</h3>
+            <p>[DOPLŇ krátky popis]</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2>Naše hodnoty</h2>
+        <p class="lead">[DOPLŇ: čím sa riadite pri práci s klientmi]</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span>&copy; <span id="year"></span> Orcabyte s. r. o. Všetky práva vyhradené.</span>
+      <span>IČO: 57030162 · DIČ: 2122538099 · orcabyte.sk</span>
+    </div>
+  </footer>
+
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
