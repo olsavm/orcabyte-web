@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cenník | Orcabyte</title>
+  <meta name="description" content="Orientačný cenník AI automatizácie a konzultácií pre malé firmy a živnostníkov na Slovensku. Ceny bez DPH, úvodná konzultácia zadarmo." />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="icon" type="image/svg+xml" href="assets/img/logo-icon.svg" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="index.html"><img src="assets/img/logo-icon.svg" alt="Orcabyte logo" class="logo-icon" width="28" height="28" />Orcabyte</a>
+      <button class="nav-toggle" aria-label="Otvoriť menu" aria-expanded="false">☰</button>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Domov</a></li>
+          <li><a href="sluzby.html">Služby</a></li>
+          <li><a class="active" href="cennik.html">Cenník</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Cenník</h1>
+        <p>Orientačné ceny za naše služby. Presný rozsah a finálnu sumu vždy potvrdíme po bezplatnej úvodnej konzultácii, podľa reálnej náročnosti vášho projektu.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="card-grid">
+          <div class="card">
+            <h3>Úvodná konzultácia</h3>
+            <p class="price">Zadarmo</p>
+            <p>30 až 45 minút, zmapujeme váš proces a orientačne odhadneme rozsah a úsporu. Bez záväzkov.</p>
+          </div>
+          <div class="card">
+            <h3>Spracovanie faktúr</h3>
+            <p class="price">od 490 € jednorazovo</p>
+            <p>Automatické spracovanie a zápis faktúr do účtovníctva alebo iného systému. Voliteľný mesačný paušál od 29 €/mesiac za prevádzku a drobné úpravy.</p>
+          </div>
+          <div class="card">
+            <h3>Automatizácia komunikácie</h3>
+            <p class="price">od 690 € jednorazovo</p>
+            <p>Triedenie a automatické odpovede na e-maily alebo správy od zákazníkov. Voliteľný mesačný paušál od 39 €/mesiac.</p>
+          </div>
+          <div class="card">
+            <h3>Reporting</h3>
+            <p class="price">od 490 € jednorazovo</p>
+            <p>Automatické pravidelné reporty a prehľady z vašich dát. Voliteľný mesačný paušál od 29 €/mesiac.</p>
+          </div>
+          <div class="card">
+            <h3>Plánovanie</h3>
+            <p class="price">od 390 € jednorazovo</p>
+            <p>Automatizácia rezervácií, kalendára alebo pripomienok. Voliteľný mesačný paušál od 19 €/mesiac.</p>
+          </div>
+          <div class="card">
+            <h3>Riešenie na mieru</h3>
+            <p class="price">podľa rozsahu, orientačne od 500 €</p>
+            <p>Keď váš proces nezapadá do žiadnej z kategórií vyššie, navrhneme riešenie presne naň. Cenu potvrdíme po konzultácii.</p>
+          </div>
+          <div class="card">
+            <h3>AI poradenstvo</h3>
+            <p class="price">45 až 60 € za hodinu</p>
+            <p>Konzultácie k tomu, ako využiť AI vo vašej firme. K dispozícii aj ako pol-dňový workshop od 250 €.</p>
+          </div>
+        </div>
+        <p class="lead">Uvedené ceny sú bez DPH. Ako platca DPH k nim pripočítame DPH vo výške 23 %. Presnú cenu vám vždy potvrdíme písomne pred začiatkom prác.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2>Nie ste si istí, čo presne potrebujete?</h2>
+        <p class="lead"><a href="kontakt.html">Dohodnite si bezplatnú konzultáciu</a>.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span>&copy; <span id="year"></span> Orcabyte s. r. o. Všetky práva vyhradené.</span>
+      <span>IČO: 57030162 · DIČ: 2122538099 · orcabyte.sk</span>
+    </div>
+  </footer>
+
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

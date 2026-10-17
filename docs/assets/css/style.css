@@ -205,6 +205,13 @@ section > .container > p.lead {
   margin-top: 0;
 }
 
+.card .price {
+  font-weight: 700;
+  color: var(--color-primary);
+  font-size: 1.1rem;
+  margin: 4px 0 12px;
+}
+
 /* ---- Kontaktný formulár (placeholder, bez backendu) ---- */
 
 .contact-form {

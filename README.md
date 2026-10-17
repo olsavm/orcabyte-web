@@ -1,6 +1,6 @@
 # orcabyte-web
 
-Kostra firemného webu pre **orcabyte.sk** — statické HTML/CSS/JS stránky, bez
+Kostra firemného webu pre **orcabyte.sk**: statické HTML/CSS/JS stránky, bez
 build kroku, nasadzované na **GitHub Pages**.
 
 ## Štruktúra repozitára
@@ -9,8 +9,8 @@ build kroku, nasadzované na **GitHub Pages**.
 orcabyte-web/
 ├── docs/              ← TOTO sa publikuje ako web (GitHub Pages: branch main, priečinok /docs)
 │   ├── index.html     ← Domov
-│   ├── o-nas.html
 │   ├── sluzby.html
+│   ├── cennik.html
 │   ├── kontakt.html
 │   ├── CNAME          ← vlastná doména (orcabyte.sk)
 │   ├── robots.txt
@@ -29,7 +29,7 @@ orcabyte-web/
 
 Prečo `/docs`, a nie `/src` alebo `/public`? GitHub Pages pri nastavení
 "Deploy from a branch" vie publikovať **len** koreňový priečinok repozitára
-alebo priečinok `/docs` — nič iné. `/docs` sme teda zvolili zámerne, aby sa
+alebo priečinok `/docs`, nič iné. `/docs` sme teda zvolili zámerne, aby sa
 dalo zvyšné (`project/`) držať mimo publikovaného webu, bez potreby GitHub
 Actions alebo build kroku.
 
@@ -38,7 +38,7 @@ Actions alebo build kroku.
 > doménou na free pláne vyžaduje), ktokoľvek si ho vie prezrieť priamo na
 > GitHub.com. Nedávaj tam teda nič citlivé.
 
-## Prvé nasadenie — kompletný postup
+## Prvé nasadenie: kompletný postup
 
 ### 1. Priprav si projekt lokálne
 
@@ -95,7 +95,7 @@ Over dostupnosť a kúp doménu u akreditovaného registrátora, napr.
 | CNAME | www | `TVOJ-USERNAME.github.io.` |
 
 (`@` niektorí registrátori nazývajú "koreňová doména" alebo necháte pole
-prázdne — rozhranie sa líši, princíp je rovnaký.)
+prázdne, rozhranie sa líši, princíp je rovnaký.)
 
 DNS zmeny sa prejavia od pár minút po niekoľko hodín.
 
@@ -105,7 +105,7 @@ DNS zmeny sa prejavia od pár minút po niekoľko hodín.
 
 GitHub si sám overí DNS a aktualizuje `docs/CNAME` (ten istý súbor už máme v
 repozitári, takže je to len potvrdenie). Keď DNS prejde, zaškrtni **Enforce
-HTTPS** — GitHub vydá certifikát automaticky (môže to trvať až pár hodín).
+HTTPS** a GitHub vydá certifikát automaticky (môže to trvať až pár hodín).
 
 ### 7. Over, že to žije
 
@@ -114,7 +114,7 @@ by sa presmerovať).
 
 ## Ako nasadiť ďalšiu verziu
 
-Od tejto chvíle je to jednoduché — žiadny ručný upload, žiadny FTP:
+Od tejto chvíle je to jednoduché: žiadny ručný upload, žiadny FTP.
 
 ```bash
 # uprav súbory v docs/
@@ -127,8 +127,8 @@ GitHub Pages automaticky zverejní novú verziu do minúty od pushu.
 
 ## Čo doplniť pred ostrým spustením
 
-Hľadaj značku `[DOPLŇ]` naprieč `docs/*.html` — je to zámerne viditeľný
+Hľadaj značku `[DOPLŇ]` naprieč `docs/*.html`, je to zámerne viditeľný
 placeholder pre skutočný obsah (texty, kontakt, IČO). Zoznam a návod, kde čo
 doplniť, je v `project/02-obsah/`, `project/03-dizajn/` a
-`project/04-vyvoj/todo.md` (vrátane riešenia pre funkčný kontaktný formulár —
+`project/04-vyvoj/todo.md` (vrátane riešenia pre funkčný kontaktný formulár,
 statický hosting sám o sebe formulár neodošle).
